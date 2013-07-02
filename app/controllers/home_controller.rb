@@ -7,15 +7,15 @@ class HomeController < ApplicationController
   def calculate
 
     @trains = {
-      :l => ["8th-l", "6th-l", "union", "3rd-l", "1st-l"],
-      :n => ["8th-n", "union", "23rd-n", "28th-n", "34th-n", "ts"],
-      :s => ["ap", "union", "23rd-s", "28th-s", "33rd-s", "gc"],
+      :l => ["8th", "6th", "union", "3rd", "1st"],
+      :n => ["8th", "union", "23rd", "28th", "34th", "ts"],
+      :s => ["ap", "union", "23rd", "28th", "33rd", "gc"],
     }
 
-    @on_station = params[:on_station]
-    @on_line = params[:on_line].to_sym
-    @off_station = params[:off_station]
-    @off_line = params[:off_line].to_sym
+    @on_station = params[:on].split('-')[1].to_s
+    @on_line = params[:on].split('-')[0].to_sym
+    @off_station = params[:off].split('-')[1].to_s
+    @off_line = params[:off].split('-')[0].to_sym
 
   if @on_station == @off_station
      @result = "You don't need to catch the train.... you are already at your destination!"

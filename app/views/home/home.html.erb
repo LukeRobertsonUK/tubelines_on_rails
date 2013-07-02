@@ -1,53 +1,41 @@
 
 
 <form action='/calculator' method='post'>
-  <p>Line to Join:</p>
-  <select name='on_line'>
-      <option value = 'l'>L</option>
-      <option value= 'n'>N</option>
-      <option value= 's'>6</option>
+  <p>Line and Station to Board</p>
+  <select name = 'on'>
+    <option value='l-8th'>8th on L</option>
+    <option value='l-6th'>6th on L</option>
+    <option value='l-union'>Union</option>
+    <option value='l-3rd'>3rd on L</option>
+    <option value='l-1st'>1st on L</option>
+    <option value='n-8th'>8th on N</option>
+    <option value='n-23rd'>23rd on N</option>
+    <option value='n-28th'>28th on N</option>
+    <option value='n-34th'>34th on N</option>
+    <option value='n-ts'>Times Square</option>
+    <option value='s-ap'>Astor Place</option>
+    <option value='s-23rd'>23rd on L</option>
+    <option value='s-28th'>28th on S</option>
+    <option value='s-33rd'>33rd on S</option>
+    <option value='s-gc'>Grand Central</option>
   </select>
-  <p>Station to Board</p>
-  <select name = 'on_station'>
-    <option value='8th-l'>8th on L</option>
-    <option value='6th-l'>6th on L</option>
-    <option value='union'>Union</option>
-    <option value='3rd-l'>3rd on L</option>
-    <option value='1st-l'>1st on L</option>
-    <option value='8th-n'>8th on N</option>
-    <option value='23rd-n'>23rd on N</option>
-    <option value='28th-n'>28th on N</option>
-    <option value='34th-n'>34th on N</option>
-    <option value='ts'>Times Square</option>
-    <option value='ap'>Astor Place</option>
-    <option value='23rd-s'>23rd on L</option>
-    <option value='28th-s'>28th on S</option>
-    <option value='33rd-s'>33rd on S</option>
-    <option value='gc'>Grand Central</option>
-  </select>
-  <p>Line to Exit</p>
-  <select name='off_line'>
-      <option value = 'l'>L</option>
-      <option value= 'n'>N</option>
-      <option value= 's'>6</option>
-  </select>
-  <p>Station to Exit</p>
-  <select name = 'off_station'>
-    <option value='8th-l'>8th on L</option>
-    <option value='6th-l'>6th on L</option>
-    <option value='union'>Union</option>
-    <option value='3rd-l'>3rd on L</option>
-    <option value='1st-l'>1st on L</option>
-    <option value='8th-n'>8th on N</option>
-    <option value='23rd-n'>23rd on N</option>
-    <option value='28th-n'>28th on N</option>
-    <option value='34th-n'>34th on N</option>
-    <option value='ts'>Times Square</option>
-    <option value='ap'>Astor Place</option>
-    <option value='23rd-s'>23rd on L</option>
-    <option value='28th-s'>28th on S</option>
-    <option value='33rd-s'>33rd on S</option>
-    <option value='gc'>Grand Central</option>
+  <p>Line and Station to Exit</p>
+  <select name = 'off'>
+     <option value='l-8th'>8th on L</option>
+    <option value='l-6th'>6th on L</option>
+    <option value='l-union'>Union</option>
+    <option value='l-3rd'>3rd on L</option>
+    <option value='l-1st'>1st on L</option>
+    <option value='n-8th'>8th on N</option>
+    <option value='n-23rd'>23rd on N</option>
+    <option value='n-28th'>28th on N</option>
+    <option value='n-34th'>34th on N</option>
+    <option value='n-ts'>Times Square</option>
+    <option value='s-ap'>Astor Place</option>
+    <option value='s-23rd'>23rd on L</option>
+    <option value='s-28th'>28th on S</option>
+    <option value='s-33rd'>33rd on S</option>
+    <option value='s-gc'>Grand Central</option>
   </select>
   <button>Go!</button>
 </form>
